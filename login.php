@@ -6,7 +6,7 @@ $message="";
 if(isset($_POST['signin']))
 {
     $User = $conn->real_escape_string($_POST['user']);
-    $pass = $conn->real_escape_string($_POST['pass']);
+    $pass = md5($conn->real_escape_string($_POST['pass']));
 	$result = mysqli_query($conn,"SELECT * FROM user WHERE user='$User'");
 	
     if($result)

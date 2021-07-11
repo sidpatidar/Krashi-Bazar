@@ -5,8 +5,8 @@ if(isset($_SESSION["user"])){
 if(isset($_POST["reset"]) )
 {
     $User = $_SESSION["user"];
-    $pass= $conn->real_escape_string($_POST['pass']);
-    $cpass= $conn->real_escape_string($_POST['cpass']);
+    $pass= md5($conn->real_escape_string($_POST['pass']));
+    $cpass= md5($conn->real_escape_string($_POST['cpass']));
     if(strcmp($pass,$cpass)==0)
     {
         $result1= mysqli_query($conn,"UPDATE user SET pass ='$pass' WHERE user='$User'"); 

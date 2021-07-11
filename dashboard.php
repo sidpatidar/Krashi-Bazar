@@ -18,7 +18,7 @@ if(isset($_SESSION["id"])){
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -64,7 +64,7 @@ if(isset($_SESSION["id"])){
 					  
 					</li>
 					<li class="nav-item">
-					    <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span></a>
+					    <a href="https://localhost/manndi/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="http://localhost/manndi/Marketplace.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-shopping-cart"></i></span><span class="pcoded-mtext">Market</span></a>

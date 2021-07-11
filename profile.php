@@ -26,7 +26,7 @@ if(isset($_SESSION["id"])){
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
     <!-- prism css -->
     <link rel="stylesheet" href="assets/css/plugins/prism-coy.css">
@@ -95,7 +95,7 @@ if(isset($_SESSION["id"])){
                             <li><a href="bc_extra.html">Other</a></li>
                         </ul> -->
                     </li>
-                    <li class="nav-item pcoded-menu-caption">
+                    <!-- <li class="nav-item pcoded-menu-caption">
                         <label>Forms &amp; table</label>
                     </li>
                     <li class="nav-item">
@@ -123,7 +123,7 @@ if(isset($_SESSION["id"])){
                             <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+                    <li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li> -->
 
                 </ul>
             </div>
@@ -304,7 +304,7 @@ if(isset($_SESSION["id"])){
                                         <div class="card-body">
                                         <h5>Address</h5>
                                             <p class="text-muted mb-1">
-                                            <?php echo$row2['Address']."  ".$row2['city']." <br> ".$row2['Pincode']." <br> ".$row2['State'];?>
+                                            <?php echo$row2['Address']."  ".$row2['City']." <br> ".$row2['Pincode']." <br> ".$row2['State'];?>
                                             </p>
                                             <p class="text-primary mb-1">
                                             <h5>Adhar Number</h5>

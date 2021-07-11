@@ -16,7 +16,7 @@ if(isset($_POST['Sign']))
     $state = $conn->real_escape_string($_POST['State']);
     $pincode = $conn->real_escape_string($_POST['pincode']);
     $adhar = $conn->real_escape_string($_POST['adhar']);
-    $pass = $conn->real_escape_string($_POST['Password']);
+    $pass =md5( $conn->real_escape_string($_POST['Password']));
     $role = $conn->real_escape_string($_POST['role']);
   
     $sql = "INSERT INTO user (user,email,pass,first,mob,City,Address,State,Pincode,Adhar,Role,name) VALUES ('$User','$email','$pass','$fname','$mobile','$city','$Address','$state','$pincode','$adhar','$role','$fname')";

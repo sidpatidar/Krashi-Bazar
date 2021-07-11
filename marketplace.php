@@ -10,7 +10,7 @@ if(isset($_SESSION["id"])){
 <html lang="en">
 <head>
 	<title>Ablepro v8.0 bootstrap admin template by Phoenixcoded</title>
-
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@ if(isset($_SESSION["id"])){
 	<meta name="keywords" content="">
 	<meta name="author" content="Phoenixcoded" />
 	<!-- Favicon icon -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -42,7 +42,13 @@ if(isset($_SESSION["id"])){
  </style>
 
 </head>
-<body class="">
+<body class=""><div id="google_translate_element"></div>
+<script type="text/javascript">
+       function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+         }
+         </script>
+		  
 	<!-- [ Pre-loader ] start -->
 	<div class="loader-bg">
 		<div class="loader-track">
@@ -112,7 +118,7 @@ if(isset($_SESSION["id"])){
 					        <li><a href="bc_extra.html">Other</a></li>
 					    </ul> -->
 					</li>
-					<li class="nav-item pcoded-menu-caption">
+					<!-- <li class="nav-item pcoded-menu-caption">
 					    <label>Forms &amp; table</label>
 					</li>
 					<li class="nav-item">
@@ -140,11 +146,11 @@ if(isset($_SESSION["id"])){
 					        <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
 					    </ul>
 					</li>
-					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li> -->
 
 				</ul>
 				
-				<div class="card text-center">
+				<!-- <div class="card text-center">
 					<div class="card-block">
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 						<i class="feather icon-sunset f-40"></i>
@@ -152,7 +158,7 @@ if(isset($_SESSION["id"])){
 						<p>Getting more features with pro version</p>
 						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
 					</div>
-				</div>
+				</div> -->
 				
 			</div>
 		</div>
@@ -304,19 +310,20 @@ if(isset($_SESSION["id"])){
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-header">
-						<h5>Basic Carousel</h5>
+						<h5></h5>
 					</div>
 					<div class="card-body">
 						<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
+							<div class="carousel-item active">
+									<img class="img-fluid d-block w-100" src="manndi/garlic1.jpg" alt="Second slide">
+								</div>
 							<?php    $result1 = $conn->query("SELECT * FROM post where crop='Wheat' OR crop='Maize' OR crop='jowar' "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 								<div class="carousel-item ">						
 									<img class="img-fluid d-block w-100" src="post_images/<?php echo ($row['ifile']); ?>" alt="First slide"  style="height:250px;width:250px;">
 								</div>
 								<?php }} ?>
-								<div class="carousel-item active">
-									<img class="img-fluid d-block w-100" src="post_images/garlic1.jpg" alt="Second slide">
-								</div>
+								
 								
 							</div>
 						</div>
@@ -328,14 +335,14 @@ if(isset($_SESSION["id"])){
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-header">
-						<h5>Carousel Controls</h5>
+						<h5></h5>
 					</div>
 					<div class="card-body">
 						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								
 								<div class="carousel-item active">
-									<img class="img-fluid d-block w-100" src="post_images/channa.jpg" alt="First slide">
+									<img class="img-fluid d-block w-100" src="manndi/channa.jpg" alt="First slide">
 								</div>
 								<?php    $result1 = $conn->query("SELECT * FROM post where crop='tur' OR crop='Bajra' OR crop='Millets' "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 								<div class="carousel-item">
@@ -354,7 +361,7 @@ if(isset($_SESSION["id"])){
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-header">
-						<h5>Carousel Indicators</h5>
+						<h5></h5>
 					</div>
 					<div class="card-body">
 						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -365,7 +372,7 @@ if(isset($_SESSION["id"])){
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img class="img-fluid d-block w-100" src="post_images/sugarcane.jpg" alt="First slide">
+									<img class="img-fluid d-block w-100" src="manndi/sugarcane.jpg" alt="First slide">
 								</div>
 								<?php    $result1 = $conn->query("SELECT * FROM post where crop='moong' OR crop='masur' OR crop='arhar' "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 								<div class="carousel-item">
@@ -384,13 +391,13 @@ if(isset($_SESSION["id"])){
 			<div class="col-sm-6">
 				<div class="card">
 					<div class="card-header">
-						<h5>Carousel Crossfade</h5>
+						<h5></h5>
 					</div>
 					<div class="card-body">
 						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img class="img-fluid d-block w-100" src="post_images/alsi.jpg" alt="First slide">
+									<img class="img-fluid d-block w-100" src="manndi/alsi.jpg" alt="First slide">
 								</div>
 								<?php    $result1 = $conn->query("SELECT * FROM post where crop='Garlic' OR crop='Soyabeens' OR crop='groundnut' "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 								<div class="carousel-item">
@@ -410,7 +417,7 @@ if(isset($_SESSION["id"])){
 			<div class="col-sm-6">
 				<div class="card">
 					<div class="card-header">
-						<h5>Carousel with Captions</h5>
+						<h5></h5>
 					</div>
 					<div class="card-body">
 						<div id="carouselExampleIndicatorscaption" class="carousel slide" data-ride="carousel">
@@ -424,16 +431,16 @@ if(isset($_SESSION["id"])){
 									<img class="img-fluid d-block w-100" src="post_images/jowar
 									.jpg" alt="First slide">
 									<div class="carousel-caption d-none d-md-block">
-										<h5 class="text-white">First slide label</h5>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+										<h5 class="text-white"></h5>
+										<p></p>
 									</div>
 								</div>
 								<?php    $result1 = $conn->query("SELECT * FROM post where crop='turmeric' OR crop='gram' OR crop='Onion' "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 								<div class="carousel-item">
 									<img class="img-fluid d-block w-100" src="post_images/<?php echo ($row['ifile']); ?>" alt="Second slide">
 									<div class="carousel-caption d-none d-md-block">
-										<h5 class="text-white">Second slide label</h5>
-										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+										<h5 class="text-white"></h5>
+										<p></p>
 									</div>
 								</div>
 								<?php }} ?>
@@ -448,11 +455,11 @@ if(isset($_SESSION["id"])){
 			<!-- [ carousel-Caption ] end -->
 
 
-			<div class="col-xl-12">
-				<h5>Card Groups</h5>
+			<!-- <div class="col-xl-12">
+				
 				<hr>
-			<div class="card-group">
-			      <?php    $result1 = $conn->query("SELECT * FROM post where  pid<=6 "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
+			    <div class="card-group">
+			      <?php    $result1 = $conn->query("SELECT * FROM post where  pid<=10 "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 					<div class="card">
 						<img class="img-fluid card-img-top" src="post_images/<?php echo ($row['ifile']); ?>" alt="Card image cap">
 						<div class="card-body">
@@ -467,33 +474,25 @@ if(isset($_SESSION["id"])){
 						</div>
 					</div>
 					<?php }} ?>
-					<!-- <div class="card">
-						<img class="img-fluid card-img-top" src="assets/images/slider/img-slide-2.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-					<div class="card">
-						<img class="img-fluid card-img-top" src="assets/images/slider/img-slide-1.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div> -->
+				
 				</div>
-			</div>
+			</div> -->
+			<?php $result2 = $conn->query("SELECT * FROM user where user='$user'"); 
+    $srole="null";
+    
+    ?>	
+    <?php $check=0;  if($result2){ while($info = mysqli_fetch_array($result2)) { ?>
+        <?php $check=strcmp("Farmer",$info['Role']);   } } ?>
+     
+			
+	
+			<?php  $count=0; $cc=6; $res1 = $conn->query("SELECT count(pid) as c FROM post");if($res1->num_rows > 0){while($row11 = $res1->fetch_assoc()){ $count= $row11['c']; }}  $ch=$count%3;   $count=$count-$ch; $count=$count/3; echo $count;  ?>
 			<div class="col-xl-12">
-				<h5 class="mt-4">Card Decks</h5>
+			<?php while($count>0){  ?>
+			
 				<hr>
 				<div class="card-deck">
-				<?php    $result1 = $conn->query("SELECT * FROM post where  pid>6 AND pid<=9 "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
+				<?php   $result1 = $conn->query("SELECT * FROM post where  pid>=$cc AND pid<=$cc+3 "); if($result1->num_rows > 0){while($row = $result1->fetch_assoc()){ ?>
 					<div class="card">
 						<img class="img-fluid card-img-top" src="post_images/<?php echo ($row['ifile']); ?>" alt="Card image cap">
 						<div class="card-body">
@@ -501,7 +500,9 @@ if(isset($_SESSION["id"])){
 							<p class="card-text"><?php echo ($row['Subject']); ?></p>
 							<p class="card-text"><?php echo ($row['Message']); ?></p>
 							<p><form method="Post" action="Show.php"><input type="text" value="<?php echo $row['pid'];  ?>" name="pid" hidden><input type="submit" value="See the" name="See" class="but1"></form></p>
-						    <p><form method="Post" action="request.php"><input type="text" value="<?php echo $row['pid'];  ?>" name="pid" hidden><input type="submit" value="request to buy" name="request" class="but"></form></p>
+						    <?php    if($check!=0){?>
+        <p><form method="Post" action="request.php" class="req"><input type="text" value="<?php echo $row['pid'];  ?>" name="pid" hidden><input type="submit" value="request to buy" name="request" class="but"></form></p>  <?php   }?>
+							<p><form method="Post" action="profile.php"><input type="text" value="<?php echo $row['uid'];  ?>" name="uid" hidden><input type="submit" value="Owner" name="profile" class="but"></form></p>
 						</div>
 						<div class="card-footer">
 							<small class="text-muted">Last updated 3 mins ago</small>
@@ -528,10 +529,10 @@ if(isset($_SESSION["id"])){
 							<small class="text-muted">Last updated 3 mins ago</small>
 						</div>
 					</div> -->
-				</div>
+				
 			</div>
 
-
+ <?php  $cc=$cc+4;  $count--; } ?>
 
 
 		</div>

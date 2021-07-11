@@ -26,7 +26,7 @@ if(isset($_SESSION["id"])){
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -71,7 +71,7 @@ if(isset($_SESSION["id"])){
 					    <label>Navigation</label>
 					</li>
 					<li class="nav-item">
-					    <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					    <a href="https://localhost/manndi/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="http://localhost/manndi/Marketplace.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-shopping-cart"></i></span><span class="pcoded-mtext">Market</span></a>
@@ -843,7 +843,12 @@ if(isset($_SESSION["id"])){
 
 <!-- Apex Chart -->
 <script src="assets/js/plugins/apexcharts.min.js"></script>
-
+<script>
+    history.pushState(null, null, null);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, null);
+    });
+</script>
 
 <!-- custom-chart js -->
 <script src="assets/js/pages/dashboard-main.js"></script>

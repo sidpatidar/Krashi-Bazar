@@ -18,7 +18,7 @@ if(isset($_SESSION["id"])){
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -73,9 +73,9 @@ if(isset($_SESSION["id"])){
 					        <li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
 					    </ul> -->
 					</li>
-					<li class="nav-item pcoded-menu-caption">
+					<!-- <li class="nav-item pcoded-menu-caption">
 					    <label>UI Element</label>
-					</li>
+					</li> -->
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fa fa-address-book"></i></span><span class="pcoded-mtext">Directory</span></a>
 					    <!-- <ul class="pcoded-submenu">
@@ -97,7 +97,7 @@ if(isset($_SESSION["id"])){
 					        <li><a href="bc_extra.html">Other</a></li>
 					    </ul> -->
 					</li>
-					<li class="nav-item pcoded-menu-caption">
+					<!-- <li class="nav-item pcoded-menu-caption">
 					    <label>Forms &amp; table</label>
 					</li>
 					<li class="nav-item">
@@ -125,11 +125,11 @@ if(isset($_SESSION["id"])){
 					        <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
 					    </ul>
 					</li>
-					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li> -->
 
 				</ul>
 				
-				<div class="card text-center">
+				<!-- <div class="card text-center">
 					<div class="card-block">
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 						<i class="feather icon-sunset f-40"></i>
@@ -137,7 +137,7 @@ if(isset($_SESSION["id"])){
 						<p>Getting more features with pro version</p>
 						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
 					</div>
-				</div>
+				</div> -->
 				
 			</div>
 		</div>
@@ -297,7 +297,7 @@ if(isset($_SESSION["id"])){
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Farmers</h5>
+                        <h5></h5>
                         <!-- <span class="d-block m-t-5">use class <code>table-striped</code> inside table element</span> -->
                     </div>
                     <div class="card-body table-border-style">
@@ -323,7 +323,7 @@ if(isset($_SESSION["id"])){
                    
                    <td>  <?php  $user4=$row3['user'];  $result4 = $conn->query("SELECT * FROM profile_picture where user='$user4'"); if($result4->num_rows > 0){while($row4 = $result4->fetch_assoc()){ ?>
 						<img class="img-radius" src="images/<?php echo ($row4['filen']); ?>" alt="User-Profile-Image" height=50px" width="50px"><?php } } ?> </td>
-                   <td><?php echo$row3['Address']."  ".$row3['city']."  ".$row3['State'];?>   </td>
+                   <td><?php echo$row3['Address']."  ".$row3['City']."  ".$row3['State'];?>   </td>
                    <td><?php echo $row3['mob']; ?>    </td>
                    <td><form method="Post" action="Profile.php"><input type="number" value="<?php echo $row3['Uid'];  ?>" name="uid" hidden><input type="submit" value="profile" name="profile"></form></td>
                          </tr> <?php } ?> 

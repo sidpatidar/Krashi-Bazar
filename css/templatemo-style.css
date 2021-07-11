@@ -273,7 +273,7 @@ span.underline {
 -------------------------------------------------------- */
 .site-top {
   position: relative;
-  background-image: url(../img/header.jpg);
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

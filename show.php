@@ -18,7 +18,7 @@ if(isset($_SESSION["id"])){
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -119,7 +119,7 @@ if(isset($_SESSION["id"])){
 					        <li><a href="bc_extra.html">Other</a></li>
 					    </ul> -->
 					</li>
-					<li class="nav-item pcoded-menu-caption">
+					<!-- <li class="nav-item pcoded-menu-caption">
 					    <label>Forms &amp; table</label>
 					</li>
 					<li class="nav-item">
@@ -147,11 +147,11 @@ if(isset($_SESSION["id"])){
 					        <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
 					    </ul>
 					</li>
-					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li> -->
 
 				</ul>
 				
-				<div class="card text-center">
+				<!-- <div class="card text-center">
 					<div class="card-block">
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 						<i class="feather icon-sunset f-40"></i>
@@ -159,7 +159,7 @@ if(isset($_SESSION["id"])){
 						<p>Getting more features with pro version</p>
 						<a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-primary btn-sm text-white m-0">Upgrade Now</a>
 					</div>
-				</div>
+				</div> -->
 				
 			</div>
 		</div>
@@ -300,8 +300,8 @@ if(isset($_SESSION["id"])){
      <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Striped Table</h5>
-                        <span class="d-block m-t-5">use class <code>table-striped</code> inside table element</span>
+                        <h5></h5>
+                        <span class="d-block m-t-5"></span>
                     </div>
                     <div class="card-body table-border-style">
                         <div class="table-responsive">
@@ -320,7 +320,7 @@ if(isset($_SESSION["id"])){
                         <?php if($result3->num_rows > 0){ ?> 
                         
                          <?php while($row3 = $result3->fetch_assoc()){ ?> 
-                            <tr> <th width="20%">Post id</th>  <td><?php echo $row3['pid']; ?>    </td></tr>
+                            <tr> <th width="20%">Product id</th>  <td><?php echo $row3['pid']; ?>    </td></tr>
                             <tr> <th width="20%"></th>  <td> <img src="post_images/<?php echo ($row3['ifile']); ?>" height="100px" width="100px"  class="crop"/> </td></tr>
                             <tr> <th width="20%">Harvest</th> <td><?php echo $row3['Crop']; ?>    </td></tr>
                             <tr> <th width="20%">Subject</th>  <td><?php echo $row3['Subject']; ?>    </td></tr>
